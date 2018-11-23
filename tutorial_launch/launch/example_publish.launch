@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node name="example_publish"				pkg="tutorial_publish"
+			type="example_publish"				output="screen"
+	>
+		<param name="example_queqe_publish"	type="int" value ="5"/>
+		<param name="example_rate_publish"	type="double" value="50.0"/>
+		<param name="example_value_publish" type="int" value="1000"/>
+	</node>
+
+</launch>

@@ -26,12 +26,19 @@ int main( int argc , char **argv ){
 	ros::init( argc , argv , "example_publish" ); 
 
 	// when want to use handle class from ros you must to have handle object for use that
-	ros::NodeHandle nh("");
+	ros::NodeHandle nh("~");
 
 	std::string topic_publish;
 	int queqe_publish;
 	double rate_publish;
 	int limit_value;
+
+	if( nh.hasParam("example_rate_publish")){
+		printf("\thave param rate publish\n");
+	}
+	else{
+		printf("\tDidn't have param rate publish\n");
+	}
 
 	nh.param< std::string >("example_topic" , topic_publish , "publish_number");
 	nh.param< int >("example_queqe_publish" , queqe_publish , 10 );
@@ -46,6 +53,8 @@ int main( int argc , char **argv ){
 
 	tutorial_msgs::SingleNumber data_message;
 	data_message.firstNumber = 0;
+
+	printf( "Our rate to publish is %lf\n" , rate_publish );
 
 	printf( "Before in to loop send data\n" );
 	while( ros::ok() && data_message.firstNumber < limit_value ){
