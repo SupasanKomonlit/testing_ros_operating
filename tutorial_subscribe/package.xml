@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>tutorial_publish</name>
+  <name>tutorial_subscribe</name>
   <version>0.0.0</version>
-  <description>The tutorial_publish package</description>
+  <description>The tutorial_subscribe package</description>
 
-  <maintainer email="zeabus@todo.todo">zeabus</maintainer>
+  <maintainer email="supasan.k@ku.th">zeabus</maintainer>
 
   <license>TODO</license>
 
@@ -13,10 +13,11 @@
   <build_depend>roscpp</build_depend>
   <exec_depend>roscpp</exec_depend>
 
-  <build_depend>tutorial_msg</build_depend>
-  <exec_depend>tutorial_msg</exec_depend>
-
   <build_depend>tutorial_msgs</build_depend>
   <exec_depend>tutorial_msgs</exec_depend>
 
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
 </package>
