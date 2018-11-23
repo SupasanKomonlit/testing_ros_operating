@@ -4,7 +4,7 @@
 	<node	name="example_listen_1_0"			pkg="tutorial_subscribe"
 			type="example_subscribe"			output="screen"
 	>
-		<param name="example_queqe_subscribe" type="int" value="2"/>
+		<param name="example_queqe_subscribe" type="int" value="7"/>
 		<param name="example_rate_subscribe" type="double" value="1"/>
 	</node>
 
