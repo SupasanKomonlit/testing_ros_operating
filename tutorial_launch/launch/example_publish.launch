@@ -4,10 +4,10 @@
 	<node name="example_publish"				pkg="tutorial_publish"
 			type="example_publish"				output="screen"
 	>
-		<param name="example_queqe_publish"	type="int" value ="2"/>
-		<param name="example_rate_publish"	type="double" value="1"/>
-		<param name="example_value_publish" type="int" value="10000000"/>
-		<param name="example_round_publish" type="int" value="10"/>
+		<param name="example_queqe_publish"	type="int" value ="1"/>
+		<param name="example_rate_publish"	type="double" value="20"/>
+		<param name="example_value_publish" type="int" value="10000"/>
+		<param name="example_round_publish" type="int" value="1"/>
 		<param name="example_sleep_publish" type="int" value="0"/>
 	</node>
 

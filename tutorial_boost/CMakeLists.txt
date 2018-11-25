@@ -18,7 +18,8 @@ include_directories(
  ${Boost_INCLUDE_DIRS}
 )
 
+
 add_executable( matrix_boost src/matrix_boost.cpp
 )
 
-target_link_libraries( matrix_boost ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries( matrix_boost ${catkin_LIBRARIES} ${Boost_LIBRARIES} /home/zeabus/Downloads/boost_1_68_0/stage/lib)
